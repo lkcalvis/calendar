@@ -4,76 +4,130 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
-<!--<![endif]-->
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Calendar</title>
-  <meta name="description" content="calendar">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css">
-  <style>
-    body {
-      padding-top: 50px;
-      padding-bottom: 20px;
-    }
-  </style>
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-
-<body>
-  <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Project name</a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <form class="navbar-form navbar-right" role="form">
-          <div class="form-group">
-            <input type="text" placeholder="Email" class="form-control">
-          </div>
-          <div class="form-group">
-            <input type="password" placeholder="Password" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-success">Sign in</button>
-        </form>
-      </div>
-      <!--/.navbar-collapse -->
-    </div>
-  </nav>
-  <div class="container">
-    <hr>
-    <div class="row">
-      <div id="calendar" />
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#calendar').fullCalendar()
-    })
-  </script>
-</body>
-
-</html>
+	<!--<![endif]-->
+	
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Calendar</title>
+		<meta name="description" content="calendar">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css">
+		<style>
+			body {
+			padding-top: 50px;
+			padding-bottom: 20px;
+			}
+			.thumb-image {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			}
+			.fc-title{
+			display: none;
+			}
+		</style>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		
+		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	</head>
+	
+	<body>
+		<!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Project name</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<form class="navbar-form navbar-right" role="form">
+						<div class="form-group">
+							<input type="text" placeholder="Email" class="form-control">
+						</div>
+						<div class="form-group">
+							<input type="password" placeholder="Password" class="form-control">
+						</div>
+						<button type="submit" class="btn btn-success">Sign in</button>
+					</form>
+				</div>
+				<!--/.navbar-collapse -->
+			</div>
+		</nav>
+		<div class="container">
+			<hr>
+			<div class="row">
+				<div id="calendar" />
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('#calendar').fullCalendar({
+					events: function (start, end, timezone, callback) {
+						$.ajax({
+							url: 'events.txt',
+							type: "GET",
+							success: function (data) {
+								var json = $.parseJSON(data);
+								var events = [];
+								if (json != undefined && json.length > 0) {
+									json.forEach(function (entry) {
+										var url, color;
+										switch(entry.title){
+											case 'A':
+											url = 'img/sun-with-face.png';
+											color = '#f8c306';
+											break;
+											case 'B':
+											url = 'img/full-moon-with-face.png';
+											color = '#3d1f83';
+											break;
+											default:
+											url = 'img/sleep.png';
+											color = '#074997';
+											break;
+										}
+										events.push({
+											start: entry.start,
+											end: entry.end,
+											allDay: true,
+											color: color,
+											imageurl:url
+										});
+										
+									});
+								} 
+								callback(events);
+								},error: function (err) {
+								alert('Error in fetching data');
+							}
+						});
+					},
+					eventRender: function(event, eventElement) {
+						if (event.imageurl) {
+							eventElement.find("div.fc-content").prepend("<img class='thumb-image' src='" + event.imageurl +"' width='120' height='120'>");
+						}
+					}
+				})
+			})
+		</script>
+	</body>
+	
+</html>						
